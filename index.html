@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- inclued css -->
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- inclued tailwind css -->
+    <link href="./style/output.css" rel="stylesheet" />
+
+    <!-- inclued icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="grid bg-[#4592d6] place-items-center w-full h-screen">
+    <div class="min-h-[150px] w-[350px] p-8 rounded-3xl bg-slate-300 shadow-lg shadow-[#463b6e67]">
+      <h1 class="text-center uppercase font-medium text-[2rem] mb-8">
+        weather app
+      </h1>
+      <!-- input box -->
+      <div class="relative">
+        <!-- inpur box -->
+        <input
+          id="input_box"
+          class="w-full h-[3.5rem] rounded-full pl-[2rem] pr-[4rem] text-[1.5rem] border-none outline-none"
+          type="text"
+          placeholder="search location"
+        />
+
+        <!-- icons search -->
+        <i
+          class="bx bx-search absolute top-[2px] right-[.5rem] cursor-pointer text-[3rem] text-[#6d6868a6]"
+        ></i>
+      </div>
+
+      <div id="display_section" class="w-full flex flex-col justify-center items-center">
+       
+      </div>
+    </div>
+
+    <!-- inclued js -->
+    <script src="./script/main.js"></script>
+  </body>
+</html>
